@@ -15,10 +15,33 @@ for (int i = 0; i < enemyPositions.Length; i++)
 
 for (int i = 0; i < position.Length; i++)
 {
-    Console.WriteLine(position[i]);
+    
 }
 
+while (true)
+{
+    char input = Console.ReadKey(false).KeyChar;
 
+    while (true)
+    {
+        if (input == 'a' && playerPos != 0 )
+        {
+            playerPos--;
+        } else if (input == 'd' && playerPos != 29)
+        {
+            playerPos++;
+        } else if (playerPos == 0 || playerPos == 29)
+        {
+            break;
+        } else
+        {
+            break;
+        }
+
+        Console.WriteLine(playerPos);
+        break;
+    }
+}
 
 enum Judgment
 {
