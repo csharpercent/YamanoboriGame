@@ -20,7 +20,7 @@ for (int i = 0; i < position.Length; i++)
 
 while (true)
 {
-    char input = Console.ReadKey(false).KeyChar;
+    char input = Console.ReadKey(true).KeyChar;
 
     while (true)
     {
